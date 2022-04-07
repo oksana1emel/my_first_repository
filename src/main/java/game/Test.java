@@ -1,11 +1,13 @@
 package game;
 
 import game.models.*;
+import game.models.rules.Rules;
 import game.services.FigureService;
 import game.services.GameBoardService;
 import game.services.GameService;
 import game.services.PlayerService;
 
+import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
@@ -20,9 +22,9 @@ public class Test {
         Game game  = gameService.createGame();
         Player winner = gameService.playTheGame(game);
         System.out.println(winner);
+// hello
 
-        /*
-        List < Figure > figures = figureService.createFigures ( Rules.getTeamComposition () );
+       /* List< Figure > figures = figureService.createFigures ( Rules.getTeamComposition () );
         GameBoard gameBoard = gameBoardService.createAGameBoard ( Rules.getFieldSize () );
         Collection < Arrangement > arrangements = playerService.getArrangements ();
 
